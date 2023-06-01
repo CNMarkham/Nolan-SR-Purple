@@ -14,12 +14,21 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        nameText.text = "Ruler:" + playerName;
+        gameManager = GetComponent<GameplayManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        yearText.text = "Year: " + gameManager.year;  
         
+        if (gameManager.population > highestPop)
+        {
+            highestPop = gameManager.population;
+            highestPopText.text = "Highest Population: " + highestPop;
+        }
+
+
     }
 }
