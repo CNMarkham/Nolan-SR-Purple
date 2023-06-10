@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    public GameObject player;
+    Rigidbody2D body;
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = Random.insideUnitCircle.normalized * 10;
-    }
+        body = GetComponent<Rigidbody2D>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (transform.position.y < player.transform.position.y)
-        {
-            Time.timeScale = 0;
-        }
     }
-}
+}    // Update is called once per frame
+
