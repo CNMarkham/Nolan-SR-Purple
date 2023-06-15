@@ -7,6 +7,8 @@ public class Ploinko : MonoBehaviour
 {
     public TMP_Text scoreText;
     private int score;
+
+    
     // Start is called before the first frame update
     void Start()
     {
