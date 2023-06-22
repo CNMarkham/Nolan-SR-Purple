@@ -8,12 +8,21 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Space Invaders/Assets/Bullet.prefab
   - component: {fileID: 2048939328881732261}
   - component: {fileID: 3670600860273804437}
   - component: {fileID: 184603071007769333}
   m_Layer: 7
   m_Name: Bullet
   m_TagString: Untagged
+=======
+  - component: {fileID: 2587052928685031446}
+  - component: {fileID: 7006892825696222838}
+  - component: {fileID: 419049435159647457}
+  m_Layer: 0
+  m_Name: block
+  m_TagString: block
+>>>>>>> 252a61d7ed4c5a6792556f5bd095f4c2f3d60826:Breakout/Assets/block.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
