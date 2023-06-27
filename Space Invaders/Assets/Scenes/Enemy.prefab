@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 864504280297578736}
   - component: {fileID: 1938949545885849505}
   - component: {fileID: 3093352072880705087}
-  - component: {fileID: -7960380585409560657}
+  - component: {fileID: -8088286305362247437}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5712192054638996012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.084, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -173,7 +173,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-7960380585409560657
+--- !u!114 &-8088286305362247437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,5 +185,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db2d6891ce4ec74ba37bdaa71b6f964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  speed: 1
+  speed: 3.43

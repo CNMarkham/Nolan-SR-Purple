@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public Animator animator;
+    private Animator animator;
     public float speed;
-    private Vector2 direction;
-    private void Start()
+    static private Vector2 direction;
+    void Start()
     {
         animator = GetComponent<Animator>();
         direction = Vector2.right;
@@ -22,16 +22,27 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            transform.Translate(direction * Time.deltaTime * speed);
+        transform.Translate(direction * Time.deltaTime * speed);
 
-        if (transform.position.x > -8f)
+        if (transform.position.x > 8f)
         {
             direction = Vector2.left;
+            MoveDown();
         }
         if (transform.position.x < -8f)
         {
             direction = Vector2.right;
+            MoveDown();
+        }
+    }
+
+    
+
+     private void MoveDown()
+    {
+        foreach (Enemy enemy in FindObjectsOfType(typeof(Enemy)))
+        {
+            enemy.transform.Translate(Vector2.down);
         }
     }
 }
-    
