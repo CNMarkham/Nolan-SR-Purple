@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed;                                     
+    public float speed;
+    public GameObject bulletPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        }
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.Translate(Vector2.left * Time.deltaTime * speed);
