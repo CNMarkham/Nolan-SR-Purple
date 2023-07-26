@@ -7,6 +7,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
+      propertyPath: blue
+      value: 
+      objectReference: {fileID: 1320972552929249151}
+    - target: {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 1320972553940686749}
+    - target: {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
+      propertyPath: eyes
+      value: 
+      objectReference: {fileID: 1320972552711855290}
+    - target: {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
+      propertyPath: white
+      value: 
+      objectReference: {fileID: 1320972552445135724}
+    - target: {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
+      propertyPath: initialDirection.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 2232522347380534261, guid: 629765719ac7e564bace604ae5282420, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2232522347380534265, guid: 629765719ac7e564bace604ae5282420, type: 3}
       propertyPath: m_Name
-      value: Inky
+      value: Inky Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2232522347871272405, guid: 629765719ac7e564bace604ae5282420, type: 3}
       propertyPath: m_Color.r
@@ -61,3 +89,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 629765719ac7e564bace604ae5282420, type: 3}
+--- !u!1 &1320972552445135724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2232522348523200806, guid: 629765719ac7e564bace604ae5282420, type: 3}
+  m_PrefabInstance: {fileID: 913820291951503946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1320972552711855290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2232522348781532912, guid: 629765719ac7e564bace604ae5282420, type: 3}
+  m_PrefabInstance: {fileID: 913820291951503946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1320972552929249151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2232522348998929717, guid: 629765719ac7e564bace604ae5282420, type: 3}
+  m_PrefabInstance: {fileID: 913820291951503946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1320972553940686749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2232522347871272407, guid: 629765719ac7e564bace604ae5282420, type: 3}
+  m_PrefabInstance: {fileID: 913820291951503946}
+  m_PrefabAsset: {fileID: 0}

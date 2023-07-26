@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2232522347380534265, guid: 629765719ac7e564bace604ae5282420, type: 3}
       propertyPath: m_Name
-      value: Clyde
+      value: Clyde Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2232522347871272405, guid: 629765719ac7e564bace604ae5282420, type: 3}
       propertyPath: m_Color.b
@@ -71,5 +71,54 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 629765719ac7e564bace604ae5282420, type: 3}
+--- !u!1 &9030647710957370687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2232522348781532912, guid: 629765719ac7e564bace604ae5282420, type: 3}
+  m_PrefabInstance: {fileID: 7181215007192943567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9030647711006926586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2232522348998929717, guid: 629765719ac7e564bace604ae5282420, type: 3}
+  m_PrefabInstance: {fileID: 7181215007192943567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9030647711231650537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2232522348523200806, guid: 629765719ac7e564bace604ae5282420, type: 3}
+  m_PrefabInstance: {fileID: 7181215007192943567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9030647711569567798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2232522347380534265, guid: 629765719ac7e564bace604ae5282420, type: 3}
+  m_PrefabInstance: {fileID: 7181215007192943567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1511396098004048908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9030647711569567798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c0e585144dfda64cb9fa3be54672968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  initialDirection: {x: 0, y: -1}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  body: {fileID: 9030647712152581656}
+  eyes: {fileID: 9030647710957370687}
+  blue: {fileID: 9030647711006926586}
+  white: {fileID: 9030647711231650537}
+  atHome: 0
+  homeDuration: 0
+--- !u!1 &9030647712152581656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2232522347871272407, guid: 629765719ac7e564bace604ae5282420, type: 3}
+  m_PrefabInstance: {fileID: 7181215007192943567}
+  m_PrefabAsset: {fileID: 0}
