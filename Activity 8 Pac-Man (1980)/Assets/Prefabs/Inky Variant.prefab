@@ -28,6 +28,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1320972552445135724}
     - target: {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
+      propertyPath: homeDuration
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6779145450674690125, guid: 629765719ac7e564bace604ae5282420, type: 3}
       propertyPath: initialDirection.y
       value: -1
       objectReference: {fileID: 0}

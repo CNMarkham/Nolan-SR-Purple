@@ -116,7 +116,7 @@ MonoBehaviour:
   blue: {fileID: 9030647711006926586}
   white: {fileID: 9030647711231650537}
   atHome: 0
-  homeDuration: 0
+  homeDuration: 24
 --- !u!1 &9030647712152581656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2232522347871272407, guid: 629765719ac7e564bace604ae5282420, type: 3}
