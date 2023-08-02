@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1370485752747618428}
   - component: {fileID: 5434677419704091088}
-  - component: {fileID: -1603826948857281268}
   - component: {fileID: 1416561312432756871}
+  - component: {fileID: 4732737454537820335}
   m_Layer: 10
   m_Name: Node
   m_TagString: Untagged
@@ -60,22 +60,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.70413303, y: 0.69217634}
   m_EdgeRadius: 0
---- !u!114 &-1603826948857281268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6155812688531956486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2644a395e68930439a7b3d66cf0a078, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  availableDirections: []
 --- !u!212 &1416561312432756871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -128,3 +112,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4732737454537820335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6155812688531956486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2644a395e68930439a7b3d66cf0a078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  availableDirections: []
