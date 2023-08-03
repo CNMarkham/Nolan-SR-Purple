@@ -83,6 +83,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2232522347380534263, guid: 629765719ac7e564bace604ae5282420, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2232522347380534265, guid: 629765719ac7e564bace604ae5282420, type: 3}
       propertyPath: m_Name
       value: Pinky Variant
