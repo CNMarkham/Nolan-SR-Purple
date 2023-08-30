@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         Jump();
         FlipDirection();
+        ChangeAnimations();
     }
 
 
@@ -43,13 +44,26 @@ public class PlayerMovement : MonoBehaviour
 
 
         }
+    }
 
+    private void ResetJumping()
+    {
+        jumping = false;
     }
     private void FlipDirection()
     {
         foreach (SpriteRenderer sprite in GetComponentsInChildren<SpriteRenderer>())
         {
             sprite.flipX = rb.velocity.x < 0;
+        }
+    }
+    private void ChangeAnimations()
+    {
+        foreach (Animator animator in GetComponentsInChildren<Animator>())
+        {
+            animator.SetFloat("velocityX", rb.velocity.x);
+            animator.SetFloat("horizontalInput", Input.GetAxis("Horizontal"));
+            animator.SetBool("inAir", hit.collider == null || jumping);
         }
     }
 }

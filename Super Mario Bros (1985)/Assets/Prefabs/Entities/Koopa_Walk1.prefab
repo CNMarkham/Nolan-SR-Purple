@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9011586156586256480}
   - component: {fileID: 4340451282124506178}
   - component: {fileID: 4813011679941420398}
+  - component: {fileID: 8114587131133130491}
   m_Layer: 8
   m_Name: Koopa_Walk1
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201727486526724260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.574616, y: -7.6758904, z: 0}
+  m_LocalPosition: {x: 12.574616, y: -7.5001507, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99,9 +100,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.25}
+  m_Offset: {x: 0, y: -0.2}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.53246725
 --- !u!50 &4813011679941420398
 Rigidbody2D:
   serializedVersion: 4
@@ -123,3 +124,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8114587131133130491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201727486526724260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361f7ad70760cb047a17d10d779572d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  direction: {x: -1, y: 0}

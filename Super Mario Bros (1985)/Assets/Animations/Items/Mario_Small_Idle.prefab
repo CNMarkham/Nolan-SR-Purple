@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 2512685220722745963}
   - component: {fileID: 2512685220722745962}
   - component: {fileID: 2512685220722745961}
-  m_Layer: 0
+  - component: {fileID: 708933869}
+  - component: {fileID: 708933873}
+  m_Layer: 7
   m_Name: Mario_Small_Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2512685220722745960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12, y: -4.4706, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -72,6 +74,40 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
+--- !u!95 &708933869
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512685220722745960}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: edf30a0abe1c8dd4e80286d5e611bbc6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &708933873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512685220722745960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54c692f5db63174ebe74c69fcf81e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2000
+  jumpForce: 35
 --- !u!1 &2512685221108660254
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2512685221108660255}
   - component: {fileID: 2512685221108660256}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ChildSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5210948081378976261}
   - component: {fileID: 77778554693525778}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mario_Big_Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5261237267306238636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 57.82, y: 3.01, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
