@@ -753,6 +753,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7e2e1fd9ac13d24db774ddd46bd24aa, type: 3}
+--- !u!1 &138969476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2512685220722745960, guid: af2dd7712ca790a4e879330cd9425047, type: 3}
+  m_PrefabInstance: {fileID: 2512685220089354880}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &146831064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2107,7 +2112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.976192, y: 2.0000403, z: -10}
+  m_LocalPosition: {x: -43.13, y: 2.0000403, z: -10}
   m_LocalScale: {x: 1.0276315, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2140,7 +2145,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -19, y: 0}
+  m_Offset: {x: -16, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2553,6 +2558,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2512685220722745963, guid: af2dd7712ca790a4e879330cd9425047, type: 3}
   m_PrefabInstance: {fileID: 2512685220089354880}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &708933880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138969476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1454416f953fa94e9605d6062b99879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smallRenderer: {fileID: 1128456870}
+  bigrenderer: {fileID: 1156577886}
+  big: 0
 --- !u!1001 &721518708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4794,6 +4814,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1128456870 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2512685221108660256, guid: af2dd7712ca790a4e879330cd9425047, type: 3}
+  m_PrefabInstance: {fileID: 2512685220089354880}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1135962479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5047,6 +5072,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1156577886 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 77778554693525778, guid: af2dd7712ca790a4e879330cd9425047, type: 3}
+  m_PrefabInstance: {fileID: 2512685220089354880}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1169586403
 PrefabInstance:
   m_ObjectHideFlags: 0
