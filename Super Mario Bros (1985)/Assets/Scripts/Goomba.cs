@@ -8,15 +8,19 @@ public class Goomba : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (collision.transform.position.y > transform.position.y + 0,4f)
+            if (collision.transform.position.y > transform.position.y + 0.4f)
             {
                 GetComponent<Animator>().SetTrigger("death");
-                GetComponent<CircleCollider2D>
-                GetComponent<>
+                GetComponent<CircleCollider2D>().enabled = false;
+                GetComponent<EnemyMovement>().enabled = false;
+                Rigidbody2D playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
+                playerRB.velocity = new Vector2(playerRB.velocity.x, 10);
+
+                Destroy(gameObject, 0.5f);
             }
             else
             {
-
+                collision.gameObject.GetComponent<PlayerBehavior>().Hit();
             }
         }
     }
