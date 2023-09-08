@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1040228939793326233}
   - component: {fileID: 3028852124141735039}
   - component: {fileID: 7783670535356020403}
+  - component: {fileID: 6468752578023907635}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -80,6 +81,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6468752578023907635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7609775882745198635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec7e75106133f54ab5b91a971f89b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 5452103826700567820, guid: 9aa36c7b71854fe4281ec1fa90d400ac, type: 3}
+  maxHits: 2
+  emptyBlock: {fileID: 21300000, guid: 8fe3f3e1acdb7e648a30a66b47ad8cbd, type: 3}
 --- !u!1 &7723303737153190016
 GameObject:
   m_ObjectHideFlags: 0
