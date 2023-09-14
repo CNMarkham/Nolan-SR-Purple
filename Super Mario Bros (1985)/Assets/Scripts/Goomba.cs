@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Goomba : MonoBehaviour
 {
+  
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("Test");
         if (collision.gameObject.CompareTag("Player"))
         {
             if (collision.transform.position.y > transform.position.y + 0.4f)
@@ -27,7 +29,7 @@ public class Goomba : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("start");
     }
 
     // Update is called once per frame
