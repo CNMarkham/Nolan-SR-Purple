@@ -8,17 +8,13 @@ public class Tetromino : MonoBehaviour
     private float previousTime;
     public float fallTime = 0.8f;
     public float fallSpeed = 25;
+    public static float width;
+    public static float height;
 
 
     // Update is called once per frame
     void Update()
     {
-
-        // Input.GetKeyDown
-        // Input.GetKeyUp
-        // Input.GetKey
-
-
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
@@ -29,11 +25,27 @@ public class Tetromino : MonoBehaviour
             transform.Translate(Vector3.right * Time.deltaTime * speed);
         }
         float tempTime = fallTime;
-        if ((Time.time - previousTime) > fallTime)
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            tempTime /= 10;                   //variable /= 45
+        }
+        if ((Time.time - previousTime) > tempTime)
         {
             transform.Translate(Vector3.down * Time.deltaTime * fallSpeed);
             previousTime = Time.time;
         }
 
+
+        
     }
+    public bool ValidMove()
+    {
+        foreach (Transform child in transform)
+        {
+            int x = Mathf.RoundToInt(child.transform.x);
+            int y = Mathf.RoundToInt(child.transform.y);
+        }
+    }
+
+
 }
