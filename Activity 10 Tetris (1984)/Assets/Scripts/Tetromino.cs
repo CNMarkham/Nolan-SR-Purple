@@ -8,8 +8,8 @@ public class Tetromino : MonoBehaviour
     private float previousTime;
     public float fallTime = 0.8f;
     public float fallSpeed = 25;
-    public static float width;
-    public static float height;
+    public static float width = 10;
+    public static float height = 20;
 
 
     // Update is called once per frame
@@ -17,34 +17,58 @@ public class Tetromino : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * speed);
+            transform.Translate(Vector3.left);
+
+            if (!ValidMove())
+            {
+                transform.Translate(Vector3.right);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
+            transform.Translate(Vector3.right);
+            if (!ValidMove())
+            {
+                transform.Translate(Vector3.left);
+            }
         }
         float tempTime = fallTime;
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            tempTime /= 10;                   //variable /= 45
+            tempTime /= 10;
         }
         if ((Time.time - previousTime) > tempTime)
         {
-            transform.Translate(Vector3.down * Time.deltaTime * fallSpeed);
+            transform.Translate(Vector3.down);
+            if (!ValidMove())
+            {
+                transform.Translate(Vector3.up);
+            }
             previousTime = Time.time;
         }
 
 
         
     }
-    public bool ValidMove()
-    {
-        foreach (Transform child in transform)
-        {
-            int x = Mathf.RoundToInt(child.transform.x);
-            int y = Mathf.RoundToInt(child.transform.y);
+    public bool ValidMove()                                 
+    {                                                       
+        foreach (Transform child in transform)            
+        {                                       
+            int x = Mathf.RoundToInt(child.transform.position.x);
+            int y = Mathf.RoundToInt(child.transform.position.y);
+            if (y < 0 || x < 0)
+            {
+                return false;    
+            }
+
+            if (x >= width || y >= height)
+            {
+                return false;
+            }
+
         }
+        return true;
     }
 
 
