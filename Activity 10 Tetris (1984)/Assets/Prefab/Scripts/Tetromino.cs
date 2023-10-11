@@ -29,20 +29,20 @@ public class Tetromino : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector3.left);
+            transform.position += Vector3.left;
 
             if (!ValidMove())
             {
-                transform.Translate(Vector3.right);
+                transform.position += Vector3.right;
             }
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right);
+            transform.position += Vector3.right;
             if (!ValidMove())
             {
-                transform.Translate(Vector3.left);
+                transform.position += Vector3.left;
             }
         }
         float tempTime = fallTime;
@@ -57,7 +57,9 @@ public class Tetromino : MonoBehaviour
             {
                 transform.position += Vector3.up;
                 this.enabled = false;
+                AddToGrid();
                 FindObjectOfType<Spawner>().SpawnTetrominos();
+
             }
             previousTime = Time.time;
         }
@@ -78,7 +80,10 @@ public class Tetromino : MonoBehaviour
             {
                 return false;
             }
-
+            if (grid[x, y] != null)
+            {
+                return false;
+            }
         }
         return true;
     }
@@ -88,10 +93,7 @@ public class Tetromino : MonoBehaviour
         {
             int x = Mathf.RoundToInt(child.transform.position.x);
             int y = Mathf.RoundToInt(child.transform.position.y);
-            if (grid[x, y] != null)
-            {
-                return false;
-            }
+            grid[x, y] = child;
         }
 
     }

@@ -135,7 +135,7 @@ MonoBehaviour:
   speed: 0
   fallTime: 0.5
   fallSpeed: 1
-  rotationPoint: {x: 0, y: 0, z: 0}
+  rotationPoint: {x: 0, y: 1, z: 0}
 --- !u!1 &656438744231857666
 GameObject:
   m_ObjectHideFlags: 0
