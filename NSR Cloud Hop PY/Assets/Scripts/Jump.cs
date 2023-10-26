@@ -5,13 +5,13 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     Rigidbody2D rigidbody;
-    float jumpForce = 15;
+    public float jumpForce = 15;
     public bool canJump;
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        
+
     }
 
     // Update is called once per frame
