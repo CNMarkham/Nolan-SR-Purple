@@ -10,6 +10,8 @@ public class Jump : MonoBehaviour
 
     public bool isGrounded;
 
+    float fallMultiplier = 1.5f;
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -19,8 +21,13 @@ public class Jump : MonoBehaviour
     {
         isGrounded = Physics.Raycast(transform.position, Vector3.down, .15f);
         Debug.DrawRay(transform.position, Vector3.down * .15f, Color.red);
-        if(Input.GetButtonDown("Jump")){
+        if(Input.GetButtonDown("Jump") && isGrounded){
             rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+        if (rigidbody.velocity.y < 0)
+        {
+            rigidbody.velocity += Physics.gravity * Time.deltaTime;
+
         }
     }
 }
