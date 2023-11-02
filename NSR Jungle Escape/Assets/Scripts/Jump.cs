@@ -26,7 +26,7 @@ public class Jump : MonoBehaviour
         }
         if (rigidbody.velocity.y < 0)
         {
-            rigidbody.velocity += Physics.gravity * Time.deltaTime;
+            rigidbody.velocity += Physics.gravity * Time.deltaTime * fallMultiplier;
 
         }
     }
